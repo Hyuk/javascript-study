@@ -213,10 +213,17 @@ typeof(num1 / num2); // "number"
 
 #### Reminder
 ```javascript
+// Number % Number
+var num1 = 5;
+var num2 = 2;
+console.log(num1 % num2); // 1
 
+// NaN % Number -> NaN
+console.log(NaN % 2); // NaN 
 ```
 
 #### Exponentiation
 ```javascript
-
+console.log((-2) ** 2); // 4
+// when using negative number for the first value, recommend to use parentathesis
 ```
