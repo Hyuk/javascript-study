@@ -225,5 +225,5 @@ console.log(NaN % 2); // NaN
 #### Exponentiation
 ```javascript
 console.log((-2) ** 2); // 4
-// when using negative number for the first value, recommend to use parentathesis
+// when using negative number for the first value, recommend to use parenthesis
 ```
