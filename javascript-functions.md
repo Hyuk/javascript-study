@@ -17,16 +17,17 @@ function addFunction(a, b) {
 addFunction(3,5); // 8
 ```
 
-## Array Queue
+## Array Queue Function
+https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line
 ```javascript
 function queue(arr,item) {
     arr.push(item);
-    return arr.shift();
+    return arr.shift(); // return the shifted value in the array.
 }
 
-var testArr = [1,2,3,4,5];
+var testArr = [3,4,5,6,7];
 
-console.log("Before: " + JSON.stringify(testArr)); // [1,2,3,4,5]
-console.log(queue(testArr, 6)); // 1
-console.log("After: " + JSON.stringify(testArr)); // [2,3,4,5,6]
+console.log("Before: " + JSON.stringify(testArr)); // [3,4,5,6,7]
+console.log(queue(testArr, 8)); // 3
+console.log("After: " + JSON.stringify(testArr)); // [4,5,6,7,8]
 ```
