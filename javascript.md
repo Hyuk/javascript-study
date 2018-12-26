@@ -1,5 +1,7 @@
 # JavaScript Basic
 
+Variables & Operations
+
 ## Comment
 * in-line comment
 * multi-line comment 
