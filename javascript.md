@@ -105,7 +105,11 @@ null // null
 * Arithmetic Operators
 
 <details>
-<summary>### Arithmetic Operators</summary>
+<summary>
+
+### Arithmetic Operators
+
+</summary>
 
 * Addition
 * Subtraction
