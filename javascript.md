@@ -104,9 +104,6 @@ null // null
 ## Operators
 * Arithmetic Operators
 
-<details>
-<summary>Arithmetic Operators</summary>
-
 ### Arithmetic Operators
 * Addition
 * Subtraction
@@ -223,4 +220,3 @@ typeof(num1 / num2); // "number"
 ```javascript
 
 ```
-</details>
