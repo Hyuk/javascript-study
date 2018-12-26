@@ -33,5 +33,5 @@ console(num1); // 12
 ### string
 ```javascript
 var text1 = "Hello World";
-console(text1); // "Helllo World"
+console(text1); // "Hello World"
 ```
