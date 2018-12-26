@@ -104,12 +104,14 @@ null // null
 ## Operators
 * Arithmetic Operators
 
-### Arithmetic Operators
+<details>
+<summary>### Arithmetic Operators</summary>
 * Addition
 * Subtraction
 * Multiplication
 * Division
-* Modulus
+* Reminder
+* Exponentiation
 
 #### Addition
 ```javascript
@@ -209,3 +211,14 @@ var num2 = 0;
 console.log(num1 / num2); // NaN
 typeof(num1 / num2); // "number"
 ```
+
+#### Reminder
+```javascript
+
+```
+
+#### Exponentiation
+```javascript
+
+```
+</details>
