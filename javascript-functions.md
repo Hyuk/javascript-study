@@ -6,7 +6,7 @@
 function sayHello() {
     console.log("Hello World");
 }
-sayHello(); // "Hello World"
+sayHello(); // Hello World
 ```
 
 ## Simple Function for Adding two numbers
