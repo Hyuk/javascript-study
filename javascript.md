@@ -105,7 +105,6 @@ null // null
 
 ## Operators
 * Arithmetic Operators
-* Logical Operators
 
 ### Arithmetic Operators
 * Addition
