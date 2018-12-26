@@ -24,6 +24,7 @@ multi-line comment */
 * function
 * boolean
 * null
+
 Variable names are case sensitive.
 Recommend to use camelCase when declaring a variable.
 
