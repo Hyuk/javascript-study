@@ -112,7 +112,7 @@ null // null
 * Reminder
 * Exponentiation
 
-#### Addition
+#### Addition (+)
 ```javascript
 // Number + Number -> addition
 var num1 = 1;
@@ -145,7 +145,7 @@ var string2 = "bar";
 console.log(string1 + string2); // foobar
 ```
 
-#### Subtraction
+#### Subtraction (-)
 ```javascript
 // Number - Number -> Subtraction
 var num1 = 2;
@@ -159,7 +159,7 @@ console.log(string1 - num1); // NaN
 typeof (string1 - num1); // "number"
 ```
 
-#### Multiplication
+#### Multiplication (*)
 ```javascript
 // Number * Number
 var num1 = 2;
@@ -182,7 +182,7 @@ var num1 = 2;
 console.log(string1 * num1); // NaN
 ```
 
-#### Division
+#### Division (/)
 ```javascript
 // Number / Number
 var num1 = 3;
@@ -211,7 +211,7 @@ console.log(num1 / num2); // NaN
 typeof(num1 / num2); // "number"
 ```
 
-#### Reminder
+#### Reminder (%)
 ```javascript
 // Number % Number
 var num1 = 5;
@@ -222,8 +222,38 @@ console.log(num1 % num2); // 1
 console.log(NaN % 2); // NaN 
 ```
 
-#### Exponentiation
+#### Exponentiation (**)
 ```javascript
 console.log((-2) ** 2); // 4
 // when using negative number for the first value, recommend to use parenthesis
+```
+
+#### Increment (++)
+```javascript
+// num++
+var num1 = 2
+var num2 = num1++
+console.log(num1); // 3
+console.log(num2); // 2
+
+// ++num
+var num1 = 2
+var num2 = ++num1
+console.log(num1); // 3
+console.log(num2); // 3
+```
+
+#### Decrement (--)
+```javascript
+// num--
+var num1 = 2
+var num2 = num1--
+console.log(num1); // 1
+console.log(num2); // 2
+
+// --num
+var num1 = 2
+var num2 = --num1
+console.log(num1); // 1
+console.log(num2); // 1
 ```
