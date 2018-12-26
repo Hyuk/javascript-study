@@ -106,6 +106,7 @@ null // null
 
 <details>
 <summary>### Arithmetic Operators</summary>
+
 * Addition
 * Subtraction
 * Multiplication
