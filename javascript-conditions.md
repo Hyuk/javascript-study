@@ -1,7 +1,8 @@
 # JavaScript Conditions
 * else if
 * switch
-* while
+* while loop
+* for loop
 
 ## else if
 ```javascript
@@ -40,7 +41,7 @@ switch(num1) {
 // the number is three
 ```
 
-## while
+## while loop
 ```javascript
 var myArray = [];
 
@@ -52,4 +53,16 @@ while(i<5) {
 console.log(myArray);
 
 // [0,1,2,3,4]
+```
+
+## for loop
+```javascript
+var numArray = [];
+
+for (var i = 1; i<5; i++) {
+    numArray.push(i);
+}
+console.log(numArray);
+
+// [1,2,3,4]
 ```
