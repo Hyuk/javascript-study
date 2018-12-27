@@ -13,6 +13,8 @@ if (num1 < 5) {
 } else {
     console.log("the number is greater than 5");
 }
+
+// the number is greater than 5
 ```
 
 
@@ -33,5 +35,7 @@ switch(num1) {
     default:
         console.log("exit");
 }
+
+// the number is three
 ```
 
