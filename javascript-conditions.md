@@ -3,6 +3,8 @@
 * switch
 * while loop
 * for loop
+* nested for loop
+* do while loop
 
 ## else if
 ```javascript
@@ -65,4 +67,35 @@ for (var i = 1; i<5; i++) {
 console.log(numArray);
 
 // [1,2,3,4]
+```
+
+## nested for loop
+```javascript
+function multiplyAll(arr) {
+  var product = 1;
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+  return product;
+}
+
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+// 5040
+```
+
+## do while loop
+```javascript
+var myArray = [];
+var i = 10;
+
+do {
+    myArray.push(i);
+    i++;
+} while (i < 11);
+console.log(myArray);
+
+// [10]
 ```

@@ -39,7 +39,6 @@ console.log(dog);
 
 ## Musical Album Collection Object Manipulation Example
 ```javascript
-// Setup
 var collection = {
     "2548": {
       "album": "Slippery When Wet",
@@ -65,10 +64,8 @@ var collection = {
       "album": "ABBA Gold"
     }
 };
-// Keep a copy of the collection for tests
 var collectionCopy = JSON.parse(JSON.stringify(collection));
 
-// Only change code below this line
 function updateRecords(id, prop, value) {
   if (prop === "tracks" && value !== "") {
     if (collection[id][prop]){
