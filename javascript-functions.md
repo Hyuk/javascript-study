@@ -17,6 +17,21 @@ function addFunction(a, b) {
 addFunction(3,5); // 8
 ```
 
+## ...args Unkown number of parameters passing through a function
+```javascript
+const sum = (function() {
+  "use strict";
+  return function sum(...args) {
+    let sumNum = 0;
+    for (let i = 0; i<args.length;i++){
+      sumNum += args[i];
+    }
+    return sumNum; 
+  };
+})();
+console.log(sum(1, 2, 3)); // 6
+```
+
 ## Array Queue Function
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line
 ```javascript
