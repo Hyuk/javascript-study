@@ -1,0 +1,5 @@
+# Debugging
+
+## console.log();
+
+## typeof();
