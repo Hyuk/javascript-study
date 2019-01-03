@@ -148,3 +148,56 @@ function booWho(bool) {
 
 booWho(null);
 ```
+
+## Title Case a Sentence
+
+```javascript
+function titleCase(str) {
+  return str.toLowerCase().replace(/(^|\s)\S/g, (L) => L.toUpperCase());
+}
+
+titleCase("I'm a little tea pot");
+```
+
+## Slice and Splice
+
+```javascript
+function frankenSplice(arr1, arr2, n) {
+  // It's alive. It's alive!
+  let localArr = arr2.slice();
+  for (let i = 0; i < arr1.length; i++) {
+    localArr.splice(n, 0, arr1[i]);
+    n++;
+  }
+  return localArr;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+```
+
+## Falsy Bouncer
+Remove false values from an Array.
+```javascript
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+bouncer([7, "ate", "", false, 9]);
+// [7, "ate", 9]
+```
+
+## Where do I belong
+
+```javascript
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  let localArr = arr.sort((a,b)=>a-b);
+  for (let i = 0; i < localArr.length; i++) {
+    if(localArr[i] >= num) {
+      return i;
+    }
+  }
+  return localArr.length;
+}
+
+getIndexToIns([40, 60], 50);
+```
