@@ -201,3 +201,37 @@ function getIndexToIns(arr, num) {
 
 getIndexToIns([40, 60], 50);
 ```
+
+## Mutation
+
+```javascript
+function mutation(arr) {
+  let test = arr[1].toLowerCase();
+  let target = arr[0].toLowerCase()
+  for (let i = 0; i < test.length; i++){
+    if(target.indexOf(test[i]) < 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
+```
+
+## Chunky Monkey
+Slice the array based on given numbers
+```javascript
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  let localArr = [];
+  let i = 0;
+  while(i < arr.length) {
+    localArr.push(arr.slice(i, i+size))
+    i += size;
+  }
+  return localArr;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+```
