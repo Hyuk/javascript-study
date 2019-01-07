@@ -237,3 +237,80 @@ chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
 
 ## Sum All Numbers in A Range
+
+```javascript
+// my basic solution
+function sumAll(arr) {
+  let localArr = arr.sort((a,b) => a > b).slice();
+  let count = 1;
+  let num = localArr[0];
+  for(let i = localArr[0]; i < localArr[localArr.length-1]-1; i++) {
+    num++;
+    localArr.splice(count,0,num);
+    count++
+  }
+  return localArr.reduce((a,b)=>a+b);
+}
+
+sumAll([1, 4]);
+sumAll([4, 1]);
+sumAll([5, 10]);
+sumAll([10, 5]);
+
+// best advanced solution
+function sumAll(arr) {
+    var sum = 0;
+    for (var i = Math.min(...arr); i <= Math.max(...arr); i++){
+        sum += i;
+    }
+  return sum;
+}
+
+sumAll([1, 4]);
+```
+
+## Diff Two Arrays
+
+```javascript
+function diffArray(arr1, arr2) {
+      var newArr = [];
+
+      function onlyInFirst(first, second) {
+      // Looping through an array to find elements that don't exist in another array
+        for (var i=0;i<first.length;i++) {
+          if (second.indexOf(first[i]) === -1) {
+            // Pushing the elements unique to first to newArr
+            newArr.push(first[i]);
+          }
+        }
+      }
+
+      onlyInFirst(arr1, arr2);
+      onlyInFirst(arr2, arr1);
+
+      return newArr;
+    }
+
+    diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+```
+
+## Seek and Destroy
+
+```javascript
+//basic solution
+function destroyer(arr) {
+  var args = Array.prototype.slice.call(arguments);
+
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < args.length; j++) {
+      if (arr[i] === args[j]) {
+        delete arr[i];
+      }
+    }
+  }
+  return arr.filter(Boolean);
+}
+
+// advanced solution
+const destroyer = (arr, ...args) => arr.filter(i => !args.includes(i));
+```
