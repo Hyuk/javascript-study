@@ -20,8 +20,8 @@ function add (arr, bookName) {
 
 function remove (arr, bookName) {
   let newArr = [...arr];
-  if (newArr.indexOf(bookName) >= 0) {
-    newArr.splice(newArr.indexOf(bookName),1);
+  if (newArr.indexOf(bookName) >= 0) { // indexOf : newArr Array에서 bookName에 해당하는 인덱스 값을 반환한다. 
+    newArr.splice(newArr.indexOf(bookName),1); // splice : newArr Array에서 첫번째 인수에 해당하는 인덱스 값부터 두번째 인수에 해당하는 값 만큼의 Array 요소를 제거한다.
     return newArr;
     }
 }
