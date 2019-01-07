@@ -235,3 +235,5 @@ function chunkArrayInGroups(arr, size) {
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
 ```
+
+## Sum All Numbers in A Range
