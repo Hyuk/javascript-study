@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Click Count</title>
+    <script>
+    </script>
+</head>
+<body>
+    <div class="main">
+
+        <h3>Click Counter</h3>
+        <a href="./click-count.txt" target="_blank" id="fileClick">Click me: 0</a>
+        <h5>Good practice: no JavaScript code in HTML</h5>
+    
+    </div>
+    <script>
+        var hyperlink = document.getElementById("fileClick"),
+            acount = 0;
+            hyperlink.onclick = function() {
+                acount += 1;
+                hyperlink.innerHTML = "Click me: " + acount;
+            }
+    </script>
+</body>
+</html>
