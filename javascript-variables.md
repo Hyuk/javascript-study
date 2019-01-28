@@ -37,7 +37,7 @@ var someVariable;
 ### undefined
 ```javascript
 var a;
-console(a); // undefined
+console.log(a); // undefined
 ```
 
 ### number
