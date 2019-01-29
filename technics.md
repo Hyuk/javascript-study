@@ -16,6 +16,8 @@
 * [Union (A ∪ B) of arrays](#union-a--b-of-arrays)
 * [Intersection (A ∩ B) of arrays](#intersection-a--b-of-arrays)
 
+> [15 Useful JS Examples of map(), reduce() and filter()](https://medium.com/@alex.permyakov/15-useful-javascript-examples-of-map-reduce-and-filter-74cbbb5e0a1f)
+
 ## Remove duplicates from an array of numbers/strings
 ```javascript
 let values = [3, 1, 3, 5, 2, 4, 4, 4];
