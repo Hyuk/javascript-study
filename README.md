@@ -15,3 +15,5 @@
 * [Class](https://github.com/Hyuk/JavaScript-Basic/blob/master/javascript-class.md)
 
 * [Object](https://github.com/Hyuk/JavaScript-Basic/blob/master/javascript-object.md)
+
+* [Technics]()
