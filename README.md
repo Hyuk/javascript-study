@@ -16,4 +16,4 @@
 
 * [Object](https://github.com/Hyuk/JavaScript-Basic/blob/master/javascript-object.md)
 
-* [Technics]()
+* [Technics](https://github.com/Hyuk/JavaScript-Basic/blob/master/technics.md)
