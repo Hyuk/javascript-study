@@ -3,6 +3,7 @@
 * Math.floor()
 * Math.pow()
 * Math.sqrt()
+* Math.round()
 * fileter()
 * parseInt()
 * map()
@@ -31,6 +32,12 @@ Math.pow(2,3); // 8
 ```javascript
 Math.sqrt(9); // 3
 Math.sqrt(-9); // NaN
+```
+
+## Math.round()
+`Math.round()` function returns the integer of the number
+```javascript
+Math.round(5.7); // 6
 ```
 
 ## filter()

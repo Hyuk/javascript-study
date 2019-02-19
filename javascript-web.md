@@ -17,3 +17,12 @@ alert("Hello World");
 document.write("Hello World");
 ```
 
+## document.getElementByID()
+```javascript
+num1 = document.getElementByID("width").value;
+```
+
+## document.getElementByClass()
+```javascript
+num1 = document.getElementByClass("width").value;
+```
