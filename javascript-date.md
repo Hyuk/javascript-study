@@ -1,5 +1,8 @@
 # Date
 
+> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+* Date()
 * getFullYear()
 * getMonth()
 * getDate()
@@ -10,6 +13,13 @@
 * getTime()
 * getDay()
 * Date.now()
+* Date.UTC()
+
+## Date()
+```javascript
+Date();
+// "Tue Feb 19 2019 16:25:30 GMT+0900 (한국 표준시)"
+```
 
 ## getFullYear()
 * 현재 년도를 반환한다.
@@ -90,4 +100,15 @@ d.getDay();
 ```javascript
 Date.now();
 // 1550556730972
+```
+
+## Date.UTC()
+* UTC -> GMT 변환
+```javascript
+var d = new Date();
+var utcDate1 = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), d.getHours(), d.getMinute(), d.getSecond(), d.getMilliseconds()));
+d
+// Tue Feb 19 2019 16:28:37 GMT+0900 (한국 표준시)
+utcDate1
+// Wed Feb 20 2019 01:28:28 GMT+0900 (한국 표준시)
 ```
