@@ -235,3 +235,67 @@ console.log(result);
 const result = years.filter((data) => data.year > 2012);
 console.log(result);
 ```
+
+## Default Parameters
+```javascript
+const defulatParams = [
+    {
+        year: 2001,
+        data: '안드로이드'
+    },
+    {
+        year: 2005,
+        data: '케잌'
+    },
+    {
+        year: 2010,
+        data: '사과'
+    },
+    {
+        year: 2013,
+        data: '바나나'
+    },
+    {
+        year: 2018,
+        data: '딸기'
+    },
+]
+
+function printYear(years){
+    console.log(years)
+}
+
+printYear();
+
+// undefined
+
+function printYear(years){
+    console.log(years)
+}
+
+printYear('sdgsdg');
+// sdgsdg
+
+function printYear(years = defulatParams){
+    console.log(years)
+}
+
+printYear();
+//[ {year: 2001, data: '안드로이드'},
+//  {year: 2005, data: '케잌'},
+//  {year: 2010, data: '사과'},
+//  {year: 2013, data: '바나나'},
+//  {year: 2018, data: '딸기'} ]
+
+function printYear(years = defulatParams){
+    console.log(years)
+}
+
+printYear(
+    {
+        year: 2001, 
+        data: '안드로이드'
+    }
+);
+//  {year: 2001, data: '안드로이드'}
+```
