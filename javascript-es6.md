@@ -299,3 +299,16 @@ printYear(
 );
 //  {year: 2001, data: '안드로이드'}
 ```
+
+## includes
+* 배열에 해당 값이 있는지 확인하기 위해 쓰인다.
+```javascript
+let years = [2001, 2003, 2005, 2007];
+const fruits = ['apple', 'banana', 'potato']
+console.log(years.indexOf(2001) !== -1);
+// true
+console.log(fruits.indexOf('apple') !== -1);
+// true
+console.log(years.includes(2001));
+// true
+```
