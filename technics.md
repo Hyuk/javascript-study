@@ -1,4 +1,4 @@
-# Technics
+# Technics & Algorithms
 
 * [Remove duplicates from an array of numbers/strings](#remove-duplicates-from-an-array-of-numbersstrings)
 * [A simple search (case-sensitive)](#a-simple-search-case-sensitive)
@@ -15,8 +15,8 @@
 * [Find and replace a key-value pair in an array of objects](#find-and-replace-a-key-value-pair-in-an-array-of-objects)
 * [Union (A ∪ B) of arrays](#union-a--b-of-arrays)
 * [Intersection (A ∩ B) of arrays](#intersection-a--b-of-arrays)
-
-> [15 Useful JS Examples of map(), reduce() and filter()](https://medium.com/@alex.permyakov/15-useful-javascript-examples-of-map-reduce-and-filter-74cbbb5e0a1f)
+* [15 Useful JS Examples of map(), reduce() and filter()](https://medium.com/@alex.permyakov/15-useful-javascript-examples-of-map-reduce-and-filter-74cbbb5e0a1f)
+* [Limit 400 char with ellipsis](#limit-400-char-with-ellipsis)
 
 ## Remove duplicates from an array of numbers/strings
 ```javascript
@@ -217,4 +217,33 @@ let arrB = [5, 2, 6, 7, 1];
 let arrA = [1, 4, 3, 2];
 let arrB = [5, 2, 6, 7, 1];
 arrA.filter(it => arrB.includes(it)); // returns [1, 2]
+```
+
+## Limit 400 char with ellipsis
+```javascript
+// this code only works for Latin letters
+    if ($(".product-detail .left .inner .description").text().length > 400) {
+        $(".product-detail .left .inner .description").text(function(index, currentText) {
+            return currentText.substr(0,400) + "...";
+        });
+    }
+```
+```javascript
+// this code works for Latin and Asian letters
+    var stringDescription = $(".product-detail .left .inner .description").text();
+    var descriptionText = "";
+    var countEscapeChar = 0;
+    for (var i = 0; i < stringDescription.length && countEscapeChar <= 400; i++) {
+        if ( escape(stringDescription[i]).length > 4 ) {
+            descriptionText += stringDescription[i];
+            countEscapeChar += 2;
+        } else {
+            descriptionText += stringDescription[i];
+            countEscapeChar += 1;
+        }
+    }
+    if (countEscapeChar >= 400) {
+        descriptionText += "...";
+    }
+    $(".product-detail .left .inner .description").html(descriptionText);
 ```
