@@ -17,3 +17,7 @@
 * [Object](https://github.com/Hyuk/JavaScript-Basic/blob/master/javascript-object.md)
 
 * [Technics](https://github.com/Hyuk/JavaScript-Basic/blob/master/technics.md)
+
+## Github Repository
+
+* [pixi.js](https://github.com/pixijs/pixi.js)
