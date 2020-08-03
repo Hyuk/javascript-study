@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   overflow: hidden;
+}
+
+#title {
+   width: 700px;
+   margin: 100px auto 0;
+}
+
+.container {
+   padding: 20px;
+}
+
+h1 {
+   margin-bottom: 20px;
+}
+
+p {
+   margin-bottom: 15px;
+}
+
+a {
+   display: block;
+   width: 100px;
+   padding: 10px;
+   background-color: blueviolet;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   border-radius: 10px;
+}
+
+#thumbnail{
+   width: 700px;
+   height: 300px;
+   margin: 0 auto;
+   padding: 20px;
+}
