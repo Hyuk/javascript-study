@@ -1,6 +1,6 @@
 # JavaScript Basic
-
-Variables
+* Comment
+* Variables
 
 ## Comment
 * in-line comment
@@ -27,7 +27,7 @@ multi-line comment */
 * boolean
 * null
 
-Variable names are case sensitive. \
+Variable names are case sensitive.
 Recommend to use camelCase when declaring a variable.
 
 ```javascript
