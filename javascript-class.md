@@ -13,10 +13,18 @@ class Animal {
 }
 ```
 
-## Class로 인스턴스 만드는 방법
+## Class로 인스턴스 만드는 방법 - #1
 
 ```javascript
 let animal = new Animal('animal');
+animal.speak(); // => animal makes a noise.
+```
+
+## Class로 인스턴스 만드는 방법 - #2
+
+```javascript
+let animal = Object.create(Animal);
+animal.name = 'animal';
 animal.speak(); // => animal makes a noise.
 ```
 
