@@ -1,5 +1,27 @@
 # JavaScript Class
 
+## Class 만드는 방법
+
+```javascript
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(this.name + ' makes a noise.');
+  }
+}
+```
+
+## Class로 인스턴스 만드는 방법
+
+```javascript
+let animal = new Animal('animal');
+animal.speak(); // => animal makes a noise.
+```
+
+## 함수를 사용해서 Class 만드는 방법
+
 ```javascript
 function makeClass() {
   "use strict";
