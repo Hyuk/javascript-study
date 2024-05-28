@@ -1,7 +1,9 @@
 # Constructors
+
 Constructors are functions that create new objects.
 
 ## Example of Constructor
+
 ```javascript
 function Bird() {
     this.name = "Albert";
@@ -11,6 +13,7 @@ function Bird() {
 ```
 
 ## Example of Constructor
+
 ```javascript
 function Dog(name, color) {
     this.name = name;
@@ -22,7 +25,9 @@ var myDog = new Dog("Sarang", "Brown");
 ```
 
 ## instanceof
+
 Verify if the variable is created based on constructor
+
 ```javascript
 let Bird = function(name, color) {
     this.name = name;
@@ -45,7 +50,9 @@ canary instanceof Bird;
 ```
 
 ## hasOwnProperty
+
 Check the new object's property and add new property.
+
 ```javascript
 function Bird(name) {
   this.name = name;
@@ -64,7 +71,9 @@ ownProps.push("own");
 ```
 
 ## Prototype
+
 add universal properties on object created based on constructor
+
 ```javascript
 function Dog(name) {
   this.name = name;
@@ -75,7 +84,9 @@ Dog.prototype.numLegs = 4;
 ```
 
 ## Prototype properties
+
 get properties and prototype properties from constructors
+
 ```javascript
 function Dog(name) {
   this.name = name;
@@ -88,7 +99,7 @@ let beagle = new Dog("Snoopy");
 let ownProps = [];
 let prototypeProps = [];
 
-// Add your code below this line 
+// Add your code below this line
 
 
 for(let property in beagle) {
@@ -101,7 +112,9 @@ for(let property in beagle) {
 ```
 
 ## constructor property in Constructors
+
 there are consturctor property in Consturctor which is equal to the Constructor
+
 ```javascript
 function Dog(name) {
   this.name = name;
@@ -119,9 +132,10 @@ function joinDogFraternity(candidate) {
 ```
 
 ## add mutiple prototype properties at once - using object
+
 ```javascript
 function Dog(name) {
-  this.name = name; 
+  this.name = name;
 }
 
 Dog.prototype = {
@@ -138,6 +152,7 @@ Dog.prototype = {
 ```
 
 ## isPrototypeOf
+
 ```javascript
 function Dog(name) {
   this.name = name;
@@ -151,6 +166,7 @@ Dog.prototype.isPrototypeOf(beagle);
 ```
 
 ## Inheritance
+
 ```javascript
 function Animal() { }
 
@@ -170,7 +186,6 @@ let beagle = new Dog();
 beagle.eat();  // Should print "nom nom nom"
 ```
 
-
 ## Private Property
 
 ```javascript
@@ -179,12 +194,13 @@ function Bird() {
   this.getWeight = function() {
     return weight;
   }
-  
+
 }
 
 ```
 
 ## IIFE (Immediately Invoked Function Expression)
+
 ```javascript
 (function () {
   console.log("A cozy nest is ready");
